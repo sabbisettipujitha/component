@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+.icon-48-chathistory{
+   background-image:url('../images/chathistory-icon48x48.png');
+}
+.icon-48-blockedusers{
+   background-image:url('../images/blockuser-icon48x48.png');
+}
+

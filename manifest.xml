@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.14" method="upgrade">
+	<name>com_openchart</name>
+	<author>Sabbisetti Pujitha</author>
+	<verison>1.0.0</verison>
+	<description>COM_OPENCHART_DESC</description>
+	<media destination="com_openchart" folder="media">
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<filename>index.html</filename>
+	</media>
+	<files folder="components/com_openchart">
+		<filename>openchart.php</filename>
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages folder="language/en-GB">
+		<language tag="en-GB">en-GB.com_openchart.ini</language>
+	</languages>
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.sql</file>
+		</sql>
+	</uninstall>
+	<administration>
+		<files folder="administrator/components/com_openchart">
+		<filename>openchart.php</filename>
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>install.sql</filename>
+		<filename>uninstall.sql</filename>
+	</files>
+	<languages folder="administrator/language/en-GB">
+		<language tag="en-GB">en-GB.com_openchart.ini</language>
+		<language tag="en-GB">en-GB.com_openchart.sys.ini</language>
+	</languages>
+	<menu link="option=com_openchart" img="../media/com_openchart/images/chat-icon16x16.png">COM_OPENCHART</menu>
+		<submenu>
+			<menu link="option=com_openchart&amp;task=chat_history" img="../media/com_openchart/images/chathistory-icon16x16.png">COM_OPENCHART_HISTORY</menu>
+			<menu link="option=com_openchart&amp;task=blocked_users" img="../media/com_openchart/images/blockuser-icon16x16.png">COM_OPENCHART_BLOCKED_USERS</menu>
+		</submenu>
+	</administration>
+</extension>
